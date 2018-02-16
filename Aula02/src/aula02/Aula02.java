@@ -6,22 +6,22 @@ public class Aula02 {
 
    
     public static void main(String[] args) {
-       Caneta c1 = new Caneta();
+       Caneta minhaCaneta = new Caneta();
         
-        c1.cor = "azul";
-        c1.ponta = 1f;
-        c1.tampar();
+        minhaCaneta.SetCor("azul");
+        minhaCaneta.SetPonta(1f);
+        minhaCaneta.Tampar();
         //c1.rabiscar();
         //c1.destampar();
-        c1.rabiscar();
-        c1.status();
+        minhaCaneta.Rabiscar();
+        minhaCaneta.Status();
         
-        Caneta c2 = new Caneta();
-        c2.modelo = "Rostnet";
-        c2.cor = "Preta";
-        c2.destampar();
-        c2.rabiscar();
-        c2.status();
+        Caneta minhaOutraCaneta = new Caneta();
+        minhaOutraCaneta.SetModelo("Rostnet");
+        minhaOutraCaneta.SetCor("Preta");
+        minhaOutraCaneta.Destampar();
+        minhaOutraCaneta.Rabiscar();
+        minhaOutraCaneta.Status();
     }
     
 }
