@@ -11,7 +11,6 @@ public class Caneta {
     
     public void SetModelo(string modelo)
     {
-        //PODEM SER FEITAS AS VALIDAÇÔES NO METÓDO SETTER
         this.modelo = modelo;
     }
     
@@ -22,7 +21,12 @@ public class Caneta {
     
     public void SetCor(string cor)
     {
-        this.cor = cor;
+        if (cor.toUpperCase.contains('BRANC'))
+        {
+            System.out.println("Não é possivel atribuir a cor branca para uma caneta");
+        } else {
+            this.cor = cor;
+        }
     }
     
     public string GetCor()
